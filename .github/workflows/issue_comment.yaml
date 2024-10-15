@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: "dump github context"
-        run: echo '${{toJSON(github.event)}}' | jq
+        run: echo '${{github.event.issue.number)}}'
         shell: bash
       
