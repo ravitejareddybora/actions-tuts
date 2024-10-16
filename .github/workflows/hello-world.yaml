@@ -23,7 +23,7 @@ jobs:
         run: echo "hello-world"
         shell: bash
   good-bye:
-    runs-on: ubuntu-22.04
+    runs-on: [self-hosted, windows-latest]
     steps:
       - name: good bye
         run: echo "good bye"
