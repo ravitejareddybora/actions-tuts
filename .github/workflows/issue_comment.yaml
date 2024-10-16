@@ -5,7 +5,7 @@ on:
     types: [opened]
 jobs:
   comment-wit-action:
-    runs-on: [self-hosted,ununtu-latest]
+    runs-on: self-hosted
     steps:
       - name: "dump github context"
         run: echo '${{ github.event.issue.number }}'
