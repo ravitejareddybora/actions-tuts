@@ -23,7 +23,7 @@ jobs:
         run: echo "hello-world"
         shell: bash
   good-bye:
-    runs-on: [self-hosted, windows-latest]
+    runs-on: [self-hosted, linux]
     steps:
       - name: good bye
         run: echo "good bye"
